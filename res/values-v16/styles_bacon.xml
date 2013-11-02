@@ -1,0 +1,80 @@
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.bacon" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_bacon</item>
+        <item name="android:popupMenuStyle">@style/bacon_PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/bacon_DropDownListView</item>
+        <item name="android:actionBarTabStyle">@style/bacon_ActionBarTabStyle</item>
+        <item name="android:actionDropDownStyle">@style/bacon_DropDownNav</item>
+        <item name="android:actionBarStyle">@style/bacon_solid_ActionBar</item>
+        <item name="android:panelBackground">@drawable/menu_hardkey_panel_bacon</item>
+        <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.bacon.widget</item>
+
+    </style>
+
+    <style name="bacon_solid_ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:icon">@drawable/ab_icon</item>
+        <item name="android:background">@drawable/ab_solid_bacon</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bacon</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bacon</item>
+        <item name="android:progressBarStyle">@style/bacon_ProgressBar</item>
+        <item name="android:titleTextStyle">@style/bacon_solid_TitleText</item>
+    </style>
+
+    <style name="bacon_solid_TitleText" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="bacon_transparent_ActionBar" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_bacon</item>
+        <item name="android:progressBarStyle">@style/bacon_ProgressBar</item>
+    </style>
+
+    <style name="bacon_PopupMenu" parent="@style/Widget.Sherlock.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bacon</item>
+    </style>
+
+    <style name="bacon_DropDownListView" parent="@style/Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_bacon</item>
+    </style>
+
+    <style name="bacon_ActionBarTabStyle" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_bacon</item>
+    </style>
+
+    <style name="bacon_DropDownNav" parent="@style/Widget.Sherlock.DropDownItem.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_bacon</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bacon</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_bacon</item>
+    </style>
+
+    <style name="bacon_ProgressBar" parent="@style/Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_bacon</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.bacon.widget" parent="@style/Theme.Sherlock">
+        <item name="android:popupMenuStyle">@style/bacon_PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/bacon_DropDownListView</item>
+    </style>
+
+</resources>
